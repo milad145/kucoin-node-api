@@ -331,6 +331,34 @@ api.getWithdrawalsList(params)
 ```
 
 ```javascript
+/*  
+  Get Withdrawal info By ID
+  GET /api/v1/withdrawals/<withdrawalId>
+  params = {
+    withdrawalId: string
+  }
+  response : {
+    {
+      "code": "200000",
+      "data": {
+        "id": "5bd6e9286d99522a52e458de",
+        "currency": "BTC",
+        "address": "1ABCdefGhiJkl...",
+        "memo": "",
+        "amount": "0.5",
+        "fee": "0.0005",
+        "walletTxId": "b6f7a12d8e4f...",
+        "status": "SUCCESS",
+        "createdAt": 1609400000000,
+        "updatedAt": 1609401000000
+      }
+    }
+  }
+*/
+api.getWithdrawalByID(params)
+```
+
+```javascript
 /* 
   Get Repay Record
   GET /api/v1/margin/borrow/outstanding
